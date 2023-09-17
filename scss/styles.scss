@@ -1,0 +1,42 @@
+
+@import "main";
+@import "footer";
+@import "navSecciones";
+@import "vars";
+@import "font";
+@import "menu";
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    max-width: 100%;
+}
+body{
+
+
+    color: black;
+    overflow-x: hidden;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+@each $k, $v in $weight{
+    .font-text-#{$k}{
+        font-family: $family;
+        font-weight: $v;
+        color: white;
+    }
+    
+}

@@ -1,0 +1,77 @@
+
+@import 'font';
+$text-font:'Oxygen', sans-serif;
+$principal-color: #008e97 ;
+$family:  'Roboto', sans-serif;
+$color-litleT:#d97a3f;
+$font-subtitle: 'Anton', sans-serif;
+$font-h3:'Jomhuria', cursive;
+$font-blog:'Fredoka One', cursive;
+$titulo-ex:'Shadows Into Light', cursive;
+
+$tituloheader:'Libre Baskerville', serif;
+$sub-tutile: 'Acme', sans-serif;
+
+
+
+@mixin subtitle {
+    font-size: 2rem;
+    padding: 2.5rem 1.5rem;
+    margin: 0rem 0;
+    text-align: center;
+    margin-top: 15px;
+    font-family: $font-subtitle;
+    letter-spacing: 2px;
+    color: $principal-color;
+}
+
+@mixin text {
+   font-family: $text-font;
+   font-weight: 400;
+   text-align: justify;
+   font-size: 1.5rem;
+   line-height: 20px;
+   color: black;
+   
+}
+
+@mixin textproceso {
+    color: black;
+    padding-left: 20px;
+    
+}
+
+
+/*banner principal y blog*/
+
+@mixin miBanner ($imagen){
+    @if $imagen == home{
+       background-color: #c2bfb0;
+        height: 100vh;
+       
+    }
+    @else if $imagen == imgBlog{
+        background-image: url(../img/headerblog2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+    }
+
+    @else  {
+    background-image: url(../img/headerblog2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+    }
+    
+}
+
+/*maps*/
+
+$weight:('light':300,'regular':400,'medium':500,'bolt':700,'black':900);
+$sizes:('xs':.5rem,'s':1rem,'m':1.5rem,'l':2rem,'xl':3rem);
+
+
+
