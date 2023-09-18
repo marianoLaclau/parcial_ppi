@@ -212,10 +212,11 @@
 
 /*procesos*/
 .test-princ {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2rem;
-  padding-top: 10rem; }
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+ }
+  
   .test-princ .test-imagen {
     width: 100%;
     padding-left: 30%; }
@@ -236,9 +237,9 @@
     padding-left: 2rem;
     font-weight: 250px;
     font-family: "Oxygen", sans-serif; }
-  .test-princ iframe {
-    width: 315px;
-    height: 215px; }
+  .test-princ .test-text iframe {
+    width: 515px;
+    height: 415px; }
 
 @media (max-width: 780px) {
   .test-princ {
