@@ -668,6 +668,7 @@
   display: flex;
   justify-content: center;
   margin-top: 5%;
+  margin-bottom: 2%;
 }  
 
 
@@ -972,6 +973,23 @@ a {
     width: 50px;
   }
 
+.carrusel{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.carrusel #carouselExampleCaptions{
+  width: 70%;
+}
+
+.contenedor-nosotros{
+  background-color:#549C59;
+}
 
 .cards {
   display: flex;
@@ -980,11 +998,13 @@ a {
   flex-wrap: wrap;
   padding: 5%;
   height: max-content;
-}.cards > .card {
+  padding: 2% 20%
+}
 
-  box-shadow: 1px 1px 10px black;
-
-
+.cards > .card {
+  box-shadow: 8px 8px 15px black;
+  font-size: 1.5rem;
+  border-radius: 10px 25px;
 }
 
 
