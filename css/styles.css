@@ -103,7 +103,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .videoheader video {
   width: 100%;
@@ -111,15 +112,15 @@
   object-fit: cover; }
 
 .headeroverline {
-  height: 100vh;
-  width: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #303952;
-  z-index: 1;
-  opacity: .60;
-   }
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 5;
+    opacity: .60;
+}
 
 
 .header-titulo {
@@ -664,6 +665,7 @@
   width: fit-content;
   border-bottom: 4px solid #303952; }
   
+
 .titulosecundario{
   display: flex;
   justify-content: center;
@@ -672,120 +674,6 @@
 }  
 
 
-
-/*Experiencia de usuarios*/
-.experiencia h3 {
-  font-size: 2rem;
-  padding: 2.5rem 1.5rem;
-  margin: 0rem 0;
-  text-align: center;
-  margin-top: 15px;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 2px;
-  color: #008e97;
-  color: #549C59; }
-
-.experiencia .experienciaUsuario {
-  display: grid;
-  grid-template-areas: 'exUn exUno expDo expdos';
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4);
-  gap: 2rem;
-  margin-top: 2rem; }
-  .experiencia .experienciaUsuario img {
-    height: auto;
-    width: auto;
-    max-height: 250px;
-    max-width: 250px; }
-  .experiencia .experienciaUsuario h5 {
-    color: #F45C43;
-    font-size: 1.5rem; }
-  .experiencia .experienciaUsuario p {
-    font-family: "Roboto", sans-serif;
-    color: black;
-    font-size: 1.5rem; }
-  .experiencia .experienciaUsuario .experienciaUsiario__uno {
-    grid-area: exUn;
-    text-align: end; }
-  .experiencia .experienciaUsuario .experienciaUsiario__dos {
-    grid-area: exUno;
-    text-align: start;
-    padding-top: 1rem;
-    max-width: 200px; }
-  .experiencia .experienciaUsuario .experienciaUsiario__tres {
-    grid-area: expDo;
-    text-align: start;
-    padding-top: 9rem;
-    max-width: 180px; }
-  .experiencia .experienciaUsuario .experienciaUsiario__cuatro {
-    grid-area: expdos;
-    text-align: end;
-    transform: scaleX(-1); }
-
-@media (max-width: 641px) {
-  .experiencia .experienciaUsuario {
-    display: grid;
-    grid-template-areas: 'exUn exUno expDo expdos';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4);
-    gap: 1rem;
-    margin-top: 1.2rem; }
-    .experiencia .experienciaUsuario img {
-      height: auto;
-      width: auto;
-      max-height: 200px;
-      max-width: 200px; }
-    .experiencia .experienciaUsuario p {
-      font-size: 1.2rem; }
-    .experiencia .experienciaUsuario .experienciaUsiario__uno {
-      grid-area: exUn;
-      text-align: end; }
-    .experiencia .experienciaUsuario .experienciaUsiario__dos {
-      grid-area: exUno;
-      text-align: start;
-      padding-top: 1rem;
-      max-width: 180px; }
-    .experiencia .experienciaUsuario .experienciaUsiario__tres {
-      grid-area: expDo;
-      text-align: start;
-      padding-top: 9rem;
-      max-width: 180px; }
-    .experiencia .experienciaUsuario .experienciaUsiario__cuatro {
-      grid-area: expdos;
-      text-align: end;
-      transform: scaleX(-1); } }
-
-@media (max-width: 500px) {
-  .experiencia {
-    margin-top: 120px; }
-    .experiencia .experienciaUsuario {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-column-gap: 2rem;
-      text-align: center; }
-      .experiencia .experienciaUsuario img {
-        display: none; }
-      .experiencia .experienciaUsuario h5 {
-        font-size: 1.2rem; }
-      .experiencia .experienciaUsuario p {
-        font-size: 1.2rem; }
-      .experiencia .experienciaUsuario .experienciaUsiario__uno {
-        grid-area: exUn;
-        text-align: end; }
-      .experiencia .experienciaUsuario .experienciaUsiario__dos {
-        grid-area: exUno;
-        text-align: start;
-        padding-top: 1rem;
-        max-width: 180px; }
-      .experiencia .experienciaUsuario .experienciaUsiario__tres {
-        grid-area: expDo;
-        text-align: start;
-        padding-top: 9rem;
-        max-width: 180px; }
-      .experiencia .experienciaUsuario .experienciaUsiario__cuatro {
-        grid-area: expdos;
-        text-align: end;
-        transform: scaleX(-1); } }
 
 /*Servicio*/
 .seccionServicio .seccionServicio__servicio {
