@@ -305,6 +305,10 @@
     padding-bottom: 01.5rem;
     line-height: 02.01rem;
     color: black; }
+.segundaSeccion__iconos > ul > li {
+  font-weight: bold;
+  font-size: medium;
+}
 
 @media (max-width: 578px) {
   .segundaSeccion .segundaSeccion__centrado {
@@ -524,7 +528,9 @@
   text-align: center;
   margin-top: 50px; }
 
-
+  .segundaSeccion .segundaSeccion__iconos{
+    padding-right: 5%;
+  }
 
 .segundaSeccion h2 {
   font-size: 3rem;
@@ -892,25 +898,34 @@ a {
 .cards {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 5%;
   height: max-content;
-  padding: 2% 20%
+  padding: 2% 10%;
+  
+  
 }
 
 .cards > .card {
   box-shadow: 8px 8px 15px black;
   font-size: 1.5rem;
   border-radius: 10px 25px;
-  height: min-content;
+  height: 40em;
+  margin: 0 15px;
+  
 }
 
 .cards > .card > img{
   border-radius: 20px;
   padding: 4%;
-  height: 20rem;
-  object-fit: cover;
+  height: 30rem;
+  object-fit:cover;
 }
+ .cards .card  #scrol {
+  overflow-y: scroll;
+  
+ }
+
+
 
 
